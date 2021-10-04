@@ -5,7 +5,7 @@ from gtts import gTTS
 
 st.title("Image to Text Web App")
 uploaded_image = st.file_uploader('Upload Image', type=['png','jpeg','jpg'])
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'tesseract.exe'
 aud=st.checkbox("Want Audio for Extracted Text ?")
 extracte=st.button("Extract Text From Image")
 output = st.empty()
