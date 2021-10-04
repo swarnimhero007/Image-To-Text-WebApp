@@ -3,6 +3,7 @@ from PIL import Image
 import streamlit as st
 from gtts import gTTS
 
+pytesseract.pytesseract.tesseract_cmd = 'tesseract.exe'
 st.title("Image to Text Web App")
 uploaded_image = st.file_uploader('Upload Image', type=['png','jpeg','jpg'])
 aud=st.checkbox("Want Audio for Extracted Text ?")
